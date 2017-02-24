@@ -17,3 +17,155 @@ Python Notes
 
   range(-10, -100, -30)
     -10, -40, -70
+    
+6. >>> [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+    [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+    
+7. >>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+    >>> for k, v in knights.items():
+    ...     print(k, v)
+
+8. >>> for i, v in enumerate(['tic', 'tac', 'toe']):
+    ...     print(i, v)
+    ...
+    0 tic
+    1 tac
+    2 toe
+
+9. >>> questions = ['name', 'quest', 'favorite color']
+    >>> answers = ['lancelot', 'the holy grail', 'blue']
+    >>> for q, a in zip(questions, answers):
+    ...     print('What is your {0}?  It is {1}.'.format(q, a))
+    ...
+    What is your name?  It is lancelot.
+    What is your quest?  It is the holy grail.
+    What is your favorite color?  It is blue.
+
+10. >>> for i in reversed(range(1, 10, 2)):
+    ...     print(i)
+    ...
+    9
+    7
+    5
+    3
+    1
+
+11. >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+    >>> for f in sorted(set(basket)):
+    ...     print(f)
+    ...
+    apple
+    banana
+    orange
+    pear
+
+12. >>> for x in range(1, 11):
+    ...     print(repr(x).rjust(2), repr(x*x).rjust(3), end=' ')
+    ...     # Note use of 'end' on previous line
+    ...     print(repr(x*x*x).rjust(4))
+    ...
+     1   1    1
+     2   4    8
+     3   9   27
+     4  16   64
+     5  25  125
+     6  36  216
+     7  49  343
+     8  64  512
+     9  81  729
+    10 100 1000
+
+>>> for x in range(1, 11):
+    ...     print('{0:2d} {1:3d} {2:4d}'.format(x, x*x, x*x*x))
+    ...
+     1   1    1
+     2   4    8
+     3   9   27
+     4  16   64
+     5  25  125
+     6  36  216
+     7  49  343
+     8  64  512
+     9  81  729
+    10 100 1000
+    
+>>> '12'.zfill(5)
+    '00012'
+>>> '-3.14'.zfill(7)
+    '-003.14'
+>>> '3.14159265359'.zfill(5)
+    '3.14159265359'
+    
+>>> print('We are the {} who say "{}!"'.format('knights', 'Ni'))
+    We are the knights who say "Ni!"
+
+>>> print('This {food} is {adjective}.'.format(
+    ...       food='spam', adjective='absolutely horrible'))
+    This spam is absolutely horrible.
+    
+>>> print('The story of {0}, {1}, and {other}.'.format('Bill', 'Manfred',
+                                                       other='Georg'))
+    The story of Bill, Manfred, and Georg.
+    
+>>> import math
+>>> print('The value of PI is approximately {0:.3f}.'.format(math.pi))
+    The value of PI is approximately 3.142.
+
+13. >>> f = open('workfile', 'w')
+
+>>> f.readline()
+    'This is the first line of the file.\n'
+>>> f.readline()
+    'Second line of the file\n'
+>>> f.readline()
+    ''
+    
+>>> for line in f:
+    ...     print(line, end='')
+    ...
+    This is the first line of the file.
+    Second line of the file
+    
+If you want to read all the lines of a file in a list you can also use list(f) or f.readlines().
+
+f.tell() returns an integer giving the file object’s current position in the file represented as number of bytes from the beginning of the file when in binary mode and an opaque number when in text mode.
+
+>>> f = open('workfile', 'rb+')
+>>> f.write(b'0123456789abcdef')
+    16
+>>> f.seek(5)      # Go to the 6th byte in the file
+    5
+>>> f.read(1)
+    b'5'
+>>> f.seek(-3, 2)  # Go to the 3rd byte before the end
+    13
+>>> f.read(1)
+    b'd'
+    
+>>> f.close()
+
+14. >>> json.dumps([1, 'simple', 'list'])
+    '[1, "simple", "list"]'
+    
+x = json.load(f)
+
+
+15.
+
+
+16.
+
+
+17.
+
+
+18.
+
+
+19.
+
+
+20.
+
+
+
