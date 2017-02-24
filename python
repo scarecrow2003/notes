@@ -1,0 +1,19 @@
+Python Notes
+1. Raw string. r'C:\test\'
+
+2. >>> 3 * 'un' + 'ium'
+    'unununium'
+    
+3. >>> 'Py' 'thon'
+    'Python'
+    
+4. for i in range(5):
+
+5. range(5, 10)
+     5 through 9
+
+  range(0, 10, 3)
+     0, 3, 6, 9
+
+  range(-10, -100, -30)
+    -10, -40, -70
