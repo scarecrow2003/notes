@@ -1,4 +1,7 @@
 1. Next.js semantic-ui-reacgt
 2. !!"string" turns into boolean
 3. next-routes.js
-ES2016 `${some_var}`
+4. ES2016 `${some_var}`
+4. Promise.all(Array(count).fill().map((element, index) => {
+
+    }))
