@@ -5,3 +5,4 @@
 4. Promise.all(Array(count).fill().map((element, index) => {
 
     }))
+5. Lodash const search = _.debounce((term) => {this.search(term)}, 300)
