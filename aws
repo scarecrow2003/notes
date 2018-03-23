@@ -10,4 +10,7 @@ EC2
     1. On Demand, Reserved, Spot, Dedicated
     2. Type: DIRTMCGFPX, Dr Mc GIFT PX
     3. EBS: SSD -- GP2, IO1; HDD(non bootable): ST1, SC1; Magnetic(Standard)
-    
+    4. chkconfig httpd on
+    5. Move volume to another AZ -- take snapshot and create volume from that snapshot
+       Move volume to another Region -- take snapshot and copy to other Region
+    6. EFS (Elastic File System) supports Network File System. Can be accessed by multiple EC2 instances.
