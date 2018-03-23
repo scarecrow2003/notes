@@ -5,6 +5,7 @@
 
 IAM
     1. Users, Groups, Roles, Policies
+    2. Access roles are global
     
 EC2
     1. On Demand, Reserved, Spot, Dedicated
@@ -14,3 +15,12 @@ EC2
     5. Move volume to another AZ -- take snapshot and create volume from that snapshot
        Move volume to another Region -- take snapshot and copy to other Region
     6. EFS (Elastic File System) supports Network File System. Can be accessed by multiple EC2 instances.
+    7. Role can be attached to a running EC2 instance
+    
+    
+ CLI
+    1. aws s3 ls
+    2. aws ec2 run-instances
+    3. aws ec2 describe-instances
+    4. aws ec2 describe-images
+    5. aws ec2 terminate-instances
