@@ -16,6 +16,10 @@ EC2
        Move volume to another Region -- take snapshot and copy to other Region
     6. EFS (Elastic File System) supports Network File System. Can be accessed by multiple EC2 instances.
     7. Role can be attached to a running EC2 instance
+    8. Meta data: http://169.254.169.254/latest/meta-data/
+    
+ S3
+    1. 
     
     
  CLI
@@ -24,3 +28,4 @@ EC2
     3. aws ec2 describe-instances
     4. aws ec2 describe-images
     5. aws ec2 terminate-instances
+    6. aws s3 cp --recursive s3://some-bucket-name /home/ec2-user/ --region eu-west-2
