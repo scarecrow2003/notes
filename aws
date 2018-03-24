@@ -35,7 +35,8 @@ EC2
     
  DynamoDB
     1. SSD, Spread across 3 geographically distinct data centers, Eventual Consistent Reads(Default) and Strongly Consistent Reads
-    
+    2. Conditional write, atomic counter
+    3. Batch operation, 1MB data and up to 100 items
     
  CLI
     1. aws s3 ls
