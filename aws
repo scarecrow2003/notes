@@ -19,7 +19,22 @@ EC2
     8. Meta data: http://169.254.169.254/latest/meta-data/
     
  S3
-    1. 
+    1. Object based. 0 to 5TB. Consists Key, Value, Version ID, Metadata, Subresources (Access Control Lists, Torrent)
+    2. 99.99% availability, 99.999999999% durability
+    3. Tiers/Classes: S3-99.99%, S3-IA (Infrequently Accessed, cheaper, but charged retrieval fee), Reduced Redundancy Storage (99.99 durability and 99.99% availability over a given year), Glacier (Very cheap, for archival only, it takes 3-5 hours to restore from Glacier)
+    4. Versioning. Once created, it cannot be deleted. It can only be suspended
+    5. Cross region replication needs to turn on versioning
+    6. S3 lifecycle management
+    7. CloudFront: a. Web b. RTMP - Video streaming
+    8. Secure CloudFront: use signed url or signed cookie
+    9. Encryption
+         In transit: SSL/TLS
+         At Rest: Server Side Encryption: SSE-S3, SSE-KMS, SSE-C; Client Side Encryption
+    10. Storage Gateway: File Gateway(NFS), Volumes Gateway(iSCSI) (a. Stored Volumes, b. Cached Volumes), Tape Gateway(VTL)
+    11. Snowball, Snowball Edge, Snowmobile
+    
+ DynamoDB
+    1. SSD, Spread across 3 geographically distinct data centers, Eventual Consistent Reads(Default) and Strongly Consistent Reads
     
     
  CLI
