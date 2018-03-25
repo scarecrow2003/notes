@@ -38,6 +38,20 @@ EC2
     2. Conditional write, atomic counter
     3. Batch operation, 1MB data and up to 100 items
     
+ SQS
+    1. Do not offer FIFO
+    2. Default visibility time out is 30 seconds. Maximum 12 hours visibility time out
+    3. At least delivery once
+    4. 256kb message size
+    5. Billed at 64kb chunks
+    6. Maximum long poll time out 20 seconds
+    
+ SNS
+    1. Protocols: HTTP, HTTPS, Email, Email-JSON, SQS, Application
+    
+ SWF
+    1. Maximum workflow can be 1 year and value are measured in seconds
+    
  CLI
     1. aws s3 ls
     2. aws ec2 run-instances
