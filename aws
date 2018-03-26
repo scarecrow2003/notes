@@ -52,6 +52,9 @@ EC2
  SWF
     1. Maximum workflow can be 1 year and value are measured in seconds
     
+ Route53
+    1. Routing policy: Simple, Weighted, Latency, Failover, Geolocation
+    
  CLI
     1. aws s3 ls
     2. aws ec2 run-instances
