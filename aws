@@ -63,3 +63,18 @@ EC2
     4. aws ec2 describe-images
     5. aws ec2 terminate-instances
     6. aws s3 cp --recursive s3://some-bucket-name /home/ec2-user/ --region eu-west-2
+    7. aws s3 sync
+    
+    
+ Security
+   Design Principles
+      1. Apply security at all layers
+      2. Enable traceability
+      3. Automate responses to security events
+      4. Focus on securing your system
+      5. Automate security best practices
+   Four areas
+      1. Data protection
+      2. Privilege management
+      3. Infrastructure protection
+      4. Detective controls
