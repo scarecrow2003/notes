@@ -39,12 +39,13 @@ EC2
     3. Batch operation, 1MB data and up to 100 items
     
  SQS
-    1. Do not offer FIFO
+    1. Do not offer FIFO (New Fifo queue)
     2. Default visibility time out is 30 seconds. Maximum 12 hours visibility time out
     3. At least delivery once
     4. 256kb message size
     5. Billed at 64kb chunks
     6. Maximum long poll time out 20 seconds
+    7. Can exist from 1 minute to 14 days, default is 4 days
     
  SNS
     1. Protocols: HTTP, HTTPS, Email, Email-JSON, SQS, Application
