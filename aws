@@ -78,3 +78,52 @@ EC2
       2. Privilege management
       3. Infrastructure protection
       4. Detective controls
+      
+  Reliability
+    Design Principles
+      1. Test recovery procedure
+      2. Automatially recover from failure
+      3. Scale horizontally to increase aggregate system availability
+      4. Stop guessing capacity
+    Three areas
+      1. Foundations
+      2. Change management
+      3. Failure management
+      
+  Performance Efficiency
+    Design Principles
+      1. Democratize advanced technologies
+      2. Go global in minutes
+      3. Use server-less architectures
+      4. Experiment more often
+    Four areas
+      1. Compute
+      2. Storage
+      3. Database
+      4. Space-time trade-off
+      
+  Cost Optimization
+    Design Principles
+      1. Transparently attribute expenditure
+      2. Use managed services to reduce cost of ownership
+      3. Trade capital expense for operating expense
+      4. Benefit from economies of scale
+      5. Stop spending money on data center operations
+    Four areas
+      1. Matched supply and demand
+      2. Cost effective resources
+      3. Expenditure awareness
+      4. Optimizing over time
+      
+  Operational Excellence
+    Design Principles
+      1. Perform operation with code
+      2. Align operations precesses to business objectives
+      3. Make regular, small. incremental changes
+      4. Test for responses to unexpected events
+      5. Learn from operational events and failures
+      6. Keep operations procedures current
+    Three areas
+      1. Prepration
+      2. Operation
+      3. Response
