@@ -3,4 +3,31 @@ docker rm container-name
 docker rmi image-name
 docker ps
 docker ps -a
-docker stop container-id
+docker stop container-name
+docker exec container-name cat /etc/hosts
+docker run -it centos bash
+docker run -d centos sleep 20
+docker run ubutun:17.04
+docker attach container-name
+docker run -i image-name //map the console input to running container
+docker run -p 80:5000 image-name //port mapping
+docker run -v /opt/datadir:/var/lib/mysql mysql //file directory mapping
+docker inspect container-name
+docker -u root ubutun
+
+
+################
+FROM Ubuntu
+
+RUN apt-get update
+RUN apt-get install python
+
+RUN pip install flask
+RUN pip install flask-mysql
+
+COPY . /opt/source-code
+
+ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run
+################
+
+docker build Dockfile -t mmumshad/my-custom-app
