@@ -14,6 +14,9 @@ docker run -p 80:5000 image-name //port mapping
 docker run -v /opt/datadir:/var/lib/mysql mysql //file directory mapping
 docker inspect container-name
 docker -u root ubutun
+docker run ubuntu --network=none/host
+docker network create --driver bridge --subnet 182.18.0.9/16 custom-isolated-network
+docker network ls
 
 
 ################
@@ -42,5 +45,21 @@ docker-compose up/stop/down
 
 docker swarm init
 docker swarm join --token <token>
+
+
+##########
+docker-compose.yml
+
+services:
+  web:
+    image: "mmumshad/simple-webapp"
+    deploy:
+      replicas: 5
+      
+  database:
+    image: "mysql"
+###########
+
+docker stack deploy -c docker-compose.yml
 
 
