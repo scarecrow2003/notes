@@ -1,0 +1,6 @@
+docker pull ubutun
+docker rm container-name
+docker rmi image-name
+docker ps
+docker ps -a
+docker stop container-id
