@@ -31,3 +31,16 @@ ENTRYPOINT FLASK_APP=/opt/source-code/app.py flask run
 ################
 
 docker build Dockfile -t mmumshad/my-custom-app
+docker push mmumshad/my-custom-app
+
+docker history mmumshad/my-custom-app
+
+docker login
+
+
+docker-compose up/stop/down
+
+docker swarm init
+docker swarm join --token <token>
+
+
